@@ -1,0 +1,225 @@
+import json
+
+# 提供的 JSON 字符串（需要先将其转换为 Python 字典）
+json_string = '''{
+    "provider": {
+        "name": "Counter-Strike: Global Offensive",
+        "appid": 730,
+        "version": 14036,
+        "steamid": "76561198070066414",
+        "timestamp": 1728982721
+    },
+    "phase_countdowns": {
+        "phase": "bomb",
+        "phase_ends_in": "14.8"
+    },
+    "map": {
+        "round_wins": {
+            "1": "ct_win_elimination",
+            "2": "ct_win_elimination",
+            "3": "t_win_elimination",
+            "4": "ct_win_elimination"
+        },
+        "mode": "competitive",
+        "name": "de_dust2",
+        "phase": "live",
+        "round": 4,
+        "team_ct": {
+            "score": 3,
+            "consecutive_round_losses": 0,
+            "timeouts_remaining": 1,
+            "matches_won_this_series": 0
+        },
+        "team_t": {
+            "score": 1,
+            "consecutive_round_losses": 2,
+            "timeouts_remaining": 1,
+            "matches_won_this_series": 0
+        },
+        "num_matches_to_win_series": 0
+    },
+    "round": {
+        "phase": "live",
+        "bomb": "planted"
+    },
+    "bomb": {
+        "state": "planted",
+        "position": "1089.44, 2484.50, 95.25",
+        "countdown": "14.8"
+    },
+    "player": {
+        "match_stats": {
+            "kills": 3,
+            "assists": 0,
+            "deaths": 1,
+            "mvps": 3,
+            "score": 6
+        },
+        "spectarget": "76561198432359931",
+        "position": "1126.81, 2526.47, 95.76",
+        "forward": "-0.38, -0.04, -0.92",
+        "weapons": {
+            "weapon_0": {
+                "name": "weapon_knife",
+                "paintkit": "default",
+                "type": "Knife",
+                "state": "active"
+            },
+            "weapon_1": {
+                "name": "weapon_deagle",
+                "paintkit": "default",
+                "type": "Pistol",
+                "ammo_clip": 7,
+                "ammo_clip_max": 7,
+                "ammo_reserve": 35,
+                "state": "holstered"
+            },
+            "weapon_2": {
+                "name": "weapon_m4a1_silencer",
+                "paintkit": "default",
+                "type": "Rifle",
+                "ammo_clip": 20,
+                "ammo_clip_max": 20,
+                "ammo_reserve": 80,
+                "state": "holstered"
+            }
+        },
+        "state": {
+            "health": 73,
+            "armor": 81,
+            "helmet": true,
+            "flashed": 0,
+            "smoked": 0,
+            "burning": 0,
+            "money": 6550,
+            "round_kills": 0,
+            "round_killhs": 0,
+            "round_totaldmg": 0,
+            "equip_value": 4600
+        },
+        "steamid": "76561198432359931",
+        "name": "Cat",
+        "observer_slot": 0,
+        "team": "CT",
+        "activity": "playing"
+    },
+    "grenades": {},
+    "allplayers": {
+        "76561198432359931": {
+            "name": "Cat",
+            "observer_slot": 0,
+            "team": "CT",
+            "match_stats": {
+                "kills": 3,
+                "assists": 0,
+                "deaths": 1,
+                "mvps": 3,
+                "score": 6
+            },
+            "position": "1126.81, 2526.47, 95.76",
+            "forward": "-0.38, -0.04, -0.92",
+            "state": {
+                "health": 73,
+                "armor": 81,
+                "helmet": true,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 6550,
+                "round_kills": 0,
+                "round_killhs": 0,
+                "round_totaldmg": 0,
+                "equip_value": 4600
+            },
+            "weapons": {
+                "weapon_0": {
+                    "name": "weapon_knife",
+                    "paintkit": "default",
+                    "type": "Knife",
+                    "state": "active"
+                },
+                "weapon_1": {
+                    "name": "weapon_deagle",
+                    "paintkit": "default",
+                    "type": "Pistol",
+                    "ammo_clip": 7,
+                    "ammo_clip_max": 7,
+                    "ammo_reserve": 35,
+                    "state": "holstered"
+                },
+                "weapon_2": {
+                    "name": "weapon_m4a1_silencer",
+                    "paintkit": "default",
+                    "type": "Rifle",
+                    "ammo_clip": 20,
+                    "ammo_clip_max": 20,
+                    "ammo_reserve": 80,
+                    "state": "holstered"
+                }
+            }
+        },
+        "76561199483415321": {
+            "name": "abibulahmoskvichev937465",
+            "observer_slot": 1,
+            "team": "T",
+            "match_stats": {
+                "kills": 1,
+                "assists": 0,
+                "deaths": 3,
+                "mvps": 1,
+                "score": 4
+            },
+            "position": "1551.99, 2749.75, 113.58",
+            "forward": "-0.91, -0.34, -0.23",
+            "state": {
+                "health": 90,
+                "armor": 94,
+                "helmet": true,
+                "flashed": 0,
+                "smoked": 0,
+                "burning": 0,
+                "money": 2200,
+                "round_kills": 0,
+                "round_killhs": 0,
+                "round_totaldmg": 27,
+                "equip_value": 5100
+            },
+            "weapons": {
+                "weapon_0": {
+                    "name": "weapon_knife_t",
+                    "paintkit": "default",
+                    "type": "Knife",
+                    "state": "active"
+                },
+                "weapon_1": {
+                    "name": "weapon_glock",
+                    "paintkit": "default",
+                    "type": "Pistol",
+                    "ammo_clip": 20,
+                    "ammo_clip_max": 20,
+                    "ammo_reserve": 120,
+                    "state": "holstered"
+                },
+                "weapon_2": {
+                    "name": "weapon_ak47",
+                    "paintkit": "default",
+                    "type": "Rifle",
+                    "ammo_clip": 30,
+                    "ammo_clip_max": 30,
+                    "ammo_reserve": 69,
+                    "state": "holstered"
+                }
+            }
+        }
+    },
+    "auth": {
+        "token": "S8RL9Z6Y22TYQK45JB4V8PHRJJMD9DS9"
+    }
+}'''
+
+# 解析 JSON 字符串为 Python 字典
+data = json.loads(json_string)
+
+# 使用 json.dumps 格式化并打印
+formatted_data = json.dumps(data, ensure_ascii=False, indent=4)
+print(formatted_data)
